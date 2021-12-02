@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href= "style.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
+        <!-- <style type="text/css">
+        </style> -->
+        <title>gitPub</title>
+    </head>
+    <body>
+        <h1>Welcome to gitPub</h1>
+        <h2>Drinks</h2>
+        <div>
+        <ul>
+            <% for (let i = 0; i < drinks.length; i++) { %>
+                <% let drink = drinks[i].name; %>
+                <% let drinkUp = drink.charAt(0).toUpperCase() + drink.slice(1) %>
+                <li>
+                    <a href="/drinks/<%=i%>">
+                        <%= drinkUp %>
+                    </a>
+                </li>
+                <% } %>
+        </ul>
+        </div>
+        <a href="/">Back to Main</a>
+    </body>
+    <footer>
+    <script type="text/javascript">
+        document.write("Copyright &copy; " + new Date().getFullYear() + ", gitPub");
+    </script>
+    </footer>
+</html>

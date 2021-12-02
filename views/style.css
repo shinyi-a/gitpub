@@ -1,0 +1,88 @@
+body {
+  background-color: #eeeeee;
+  color: #0f044c;
+  text-align: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration-line: none;
+  color: #0f044c;
+  font-size: larger;
+}
+
+a:hover {
+  background-color: #614fc01c;
+  text-decoration-line: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+}
+
+@counter-style arrow {
+  system: cyclic;
+  symbols: "↣";
+  suffix: " ";
+}
+
+h1,
+div {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Yeseva One", cursive;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  padding: 8px;
+  list-style-type: arrow;
+}
+
+img {
+  max-height: 300px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  height: 50px;
+  background-color: #0b0433;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  left: 0px;
+}
+
+section {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
